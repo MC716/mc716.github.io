@@ -21,6 +21,7 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     /* NAV BAR */
@@ -47,25 +48,45 @@
     /* MAIN CONTAINER */
     .container {
       max-width: 900px;
-      margin: 60px auto;
+      margin: 70px auto;
       padding: 0 24px;
+      position: relative;
     }
 
-    /* HERO WITH PHOTO */
+    /* HERO */
     .hero {
       display: flex;
       align-items: center;
       gap: 40px;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
       flex-wrap: wrap;
+      position: relative;
     }
 
+    /* LIGHT MOLECULE BACKGROUND */
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: -160px;
+      width: 520px;
+      height: 520px;
+      background: url("assets/rh2_molecule.svg") no-repeat center;
+      background-size: contain;
+      opacity: 0.045;
+      z-index: -1;
+      transform: rotate(-15deg);
+      pointer-events: none;
+    }
+
+    /* PROFILE PHOTO */
     .profile-pic {
       width: 160px;
       height: 160px;
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      flex-shrink: 0;
     }
 
     .hero-text {
@@ -85,7 +106,7 @@
 
     .hero p {
       font-size: 1.05rem;
-      margin-top: 20px;
+      margin-top: 18px;
     }
 
     /* SECTIONS */
@@ -93,7 +114,7 @@
       background: var(--card);
       padding: 28px 32px;
       border-radius: 12px;
-      margin-bottom: 30px;
+      margin-bottom: 34px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.04);
     }
 
@@ -113,11 +134,24 @@
       margin-bottom: 10px;
     }
 
+    /* FOOTER */
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: var(--muted);
       margin: 60px 0 30px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 640px) {
+      .hero {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero::after {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -137,7 +171,7 @@
     <!-- HERO -->
     <div class="hero">
 
-      <!-- ADD YOUR PHOTO HERE -->
+      <!-- PROFILE PHOTO -->
       <img src="assets/mithun.jpg" alt="Mithun C. Madhusudhanan" class="profile-pic">
 
       <div class="hero-text">
