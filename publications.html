@@ -6,21 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-    :root {
-      --accent: #1f4ed8;
-      --text: #1a1a1a;
-      --muted: #555;
-      --bg: #fafafa;
-      --card: #ffffff;
-    }
-
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                    Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
+      background: #fafafa;
+      color: #1a1a1a;
+      line-height: 1.7;
     }
 
     /* NAV BAR */
@@ -37,14 +29,14 @@
       margin-right: 24px;
       text-decoration: none;
       font-weight: 500;
-      color: var(--text);
+      color: #1a1a1a;
     }
 
     .navbar a:hover {
-      color: var(--accent);
+      color: #2563eb;
     }
 
-    /* CONTAINER */
+    /* PAGE */
     .container {
       max-width: 900px;
       margin: 70px auto;
@@ -52,43 +44,50 @@
     }
 
     h1 {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
     .subtitle {
-      color: var(--muted);
+      color: #555;
       margin-bottom: 30px;
     }
 
-    /* PUBLICATION CARD */
+    /* PUBLICATIONS CARD */
     .pub-card {
-      background: var(--card);
-      padding: 26px 30px;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      background: white;
+      padding: 30px 36px;
+      border-radius: 14px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.05);
     }
 
-    .pub-list {
-      list-style: none;
-      padding-left: 0;
+    ol {
+      padding-left: 22px;
     }
 
-    .pub-list li {
+    li {
       margin-bottom: 18px;
     }
 
-    .journal {
-      font-weight: 600;
+    .doi {
+      margin-left: 6px;
+      font-size: 0.85em;
+      color: #2563eb;
+      text-decoration: none;
+      border: 1px solid #dbeafe;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-weight: 500;
+      white-space: nowrap;
     }
 
-    .year {
-      color: var(--muted);
+    .doi:hover {
+      background: #eff6ff;
     }
 
     footer {
       text-align: center;
       font-size: 0.9rem;
-      color: var(--muted);
+      color: #666;
       margin: 60px 0 30px;
     }
   </style>
@@ -107,107 +106,92 @@
   <div class="container">
 
     <h1>Publications</h1>
-    <p class="subtitle">
-      Peer-reviewed journal articles (*chronological order*)
-    </p>
+    <p class="subtitle">Peer-reviewed journal articles (chronological order)</p>
 
     <div class="pub-card">
-      <ol class="pub-list">
+      <ol>
 
         <li>
-          Sun, J.; Tugwell, T. H.; Xu, L.; <strong>Madhusudhanan, M. C.</strong>;
-          Liu, P.; Engle, K. M.
-          Copper(II)-Catalyzed Stereodivergent Addition of Carboxylic Acids to
-          Unactivated Alkynes via Nucleocupration.
-          <span class="journal">J. Am. Chem. Soc.</span>
-          <span class="year">147, 36407–36419 (2025).</span>
+          Sun, J.; Tugwell, T. H.; Xu, L.; <b>Madhusudhanan, M. C.</b>; Liu, P.; Engle, K. M.
+          Copper(II)-Catalyzed Stereodivergent Addition of Carboxylic Acids to Unactivated Alkynes via Nucleocupration.
+          <i>J. Am. Chem. Soc.</i> 147, 36407–36419 (2025).
+          <a class="doi" href="https://doi.org/10.1021/jacs.5c10387" target="_blank">DOI</a>
         </li>
 
         <li>
-          Sharland, J.; Shimambukuro, K.; Alturaifi, T. M.; Mai, B. K.;
-          <strong>Madhusudhanan, M. C.</strong>; Musaev, D. G.; Liu, P.; Davies, H. M. L.
-          HFIP Solvent Effects on Catalyst Flexibility and Enantioselectivity of
-          Dirhodium Tetracarboxylate-Catalyzed Cyclopropanation.
-          <span class="journal">J. Am. Chem. Soc.</span>
-          <span class="year">147, 14694–14704 (2025).</span>
+          Sharland, J.; Shimambukuro, K.; Alturaifi, T. M.; Mai, B. K.; <b>Madhusudhanan, M. C.</b>;
+          Musaev, D. G.; Liu, P.; Davies, H. M. L.
+          HFIP Solvent Effects on Catalyst Flexibility and Enantioselectivity of Dirhodium Tetracarboxylate-Catalyzed Cyclopropanation.
+          <i>J. Am. Chem. Soc.</i> 147, 14694–14704 (2025).
+          <a class="doi" href="https://doi.org/10.1021/jacs.5c03007" target="_blank">DOI</a>
         </li>
 
         <li>
-          Casselman, T. D.; <strong>Madhusudhanan, M. C.</strong>; Mai, B. K.; Liu, P.;
-          Stoltz, B. M.
-          Potassium tert-Butoxide-Mediated Stereoselective/Direct Mannich Reaction
-          of α-Substituted-γ-Lactams with in situ Generated Aryl N-Silyl Imines.
-          <span class="journal">Chem. Sci.</span>
-          <span class="year">16, 9863–9871 (2025).</span>
+          Casselman, T. D.; <b>Madhusudhanan, M. C.</b>; Mai, B. K.; Liu, P.; Stoltz, B. M.
+          Potassium tert-Butoxide-Mediated Stereoselective/Direct Mannich Reaction of α-Substituted-γ-Lactams with
+          in situ Generated Aryl N-Silyl Imines.
+          <i>Chem. Sci.</i> 16, 9863–9871 (2025).
+          <a class="doi" href="https://doi.org/10.1039/D4SC06391K" target="_blank">DOI</a>
         </li>
 
         <li>
-          Meng, J.; <strong>Madhusudhanan, M. C.</strong><sup>†</sup>; Wang, T.<sup>†</sup>;
-          Cheng, Z.; Zhao, B.; Shi, H.; Yang, L.; Liu, P.; Jiao, N.
-          Overcoming Challenges in Transforming Complex Carboxylic Acids by
-          Biomimetic Bimetallic Catalysis.
-          <span class="journal">Nat. Catal.</span>
-          <span class="year">(2025).</span>
+          Meng, J.; <b>Madhusudhanan, M. C.</b><sup>†</sup>; Wang, T.<sup>†</sup>; Cheng, Z.; Zhao, B.; Shi, H.;
+          Yang, L.; Liu, P.; Jiao, N.
+          Overcoming Challenges in Transforming Complex Carboxylic Acids by Biomimetic Bimetallic Catalysis.
+          <i>Nat. Catal.</i> (2025).
+          <a class="doi" href="https://doi.org/10.1038/s41929-025-01446-y" target="_blank">DOI</a>
           <br><small><sup>†</sup>Equal contribution.</small>
         </li>
 
         <li>
-          Nie, Q.; Zhao, F.; Yu, X.; <strong>Madhusudhanan, M. C.</strong>; Chang, C.; Li, S.;
-          Chowdhury, S. R.; Kille, B.; Xu, A.; Sun, C.; <em>et al.</em>
-          A New Class of Benzofuranoindoline-Bearing Heptacyclic Fungal RiPPs
-          with Anticancer Activities.
-          <span class="journal">Nat. Chem. Biol.</span>
-          <span class="year">21, 1938–1947 (2025).</span>
+          Nie, Q.; Zhao, F.; Yu, X.; <b>Madhusudhanan, M. C.</b>; Chang, C.; Li, S.; Chowdhury, S. R.; <i>et al.</i>
+          A New Class of Benzofuranoindoline-Bearing Heptacyclic Fungal RiPPs with Anticancer Activities.
+          <i>Nat. Chem. Biol.</i> 21, 1938–1947 (2025).
+          <a class="doi" href="https://doi.org/10.1038/s41589-025-01946-9" target="_blank">DOI</a>
         </li>
 
         <li>
-          Chen, M.; Knox, C. D.; <strong>Madhusudhanan, M. C.</strong>; Tugwell, T. H.;
-          Liu, C.; Liu, P.; Dong, G.
-          Stereospecific Alkenylidene Homologation of Organoboronates by SNV Reaction.
-          <span class="journal">Nature</span>
-          <span class="year">631, 328–334 (2024).</span>
+          Chen, M.; Knox, C. D.; <b>Madhusudhanan, M. C.</b>; Tugwell, T. H.; Liu, C.; Liu, P.; Dong, G.
+          Stereospecific Alkenylidene Homologation of Organoboronates by S<sub>N</sub>V Reaction.
+          <i>Nature</i> 631, 328–334 (2024).
+          <a class="doi" href="https://doi.org/10.1038/s41586-024-07579-7" target="_blank">DOI</a>
         </li>
 
         <li>
-          Xie, Q.; Tugwell, T. H.; Li, J.; <strong>Madhusudhanan, M. C.</strong>;
-          Liu, P.; Dong, G.
+          Xie, Q.; Tugwell, T. H.; Li, J.; <b>Madhusudhanan, M. C.</b>; Liu, P.; Dong, G.
           Enantioconvergent Carbenoid Insertion into Carbon–Boron Bonds.
-          <span class="journal">Nat. Synth.</span>
-          <span class="year">4, 1297–1307 (2025).</span>
+          <i>Nat. Synth.</i> 4, 1297–1307 (2025).
+          <a class="doi" href="https://doi.org/10.1038/s44160-025-00836-1" target="_blank">DOI</a>
         </li>
 
         <li>
-          Lal, A.; Rai, R.; <strong>Madhusudhanan, M. C.</strong>; Sureshan, K. M.
-          Topochemical Polymerization of Retro-Isomeric Peptides for Tuning
-          Polymer Structure and Properties.
-          <span class="journal">Angew. Chem. Int. Ed.</span>
-          <span class="year">64, e202503624 (2025).</span>
+          Lal, A.; Rai, R.; <b>Madhusudhanan, M. C.</b>; Sureshan, K. M.
+          Topochemical Polymerization of Retro-Isomeric Peptides for Tuning the Polymer Structure and Properties.
+          <i>Angew. Chem. Int. Ed.</i> 64, e202503624 (2025).
+          <a class="doi" href="https://doi.org/10.1002/anie.202503624" target="_blank">DOI</a>
         </li>
 
         <li>
-          Lal, A.; <strong>Madhusudhanan, M. C.</strong>; Sureshan, K. M.
-          Large Molecular Rotation in Crystals Changes the Course of a
-          Topochemical Diels–Alder Reaction.
-          <span class="journal">Angew. Chem. Int. Ed.</span>
-          <span class="year">63, e202411165 (2024).</span>
+          Lal, A.; <b>Madhusudhanan, M. C.</b>; Sureshan, K. M.
+          Large Molecular Rotation in Crystals Changes the Course of a Topochemical Diels–Alder Reaction.
+          <i>Angew. Chem. Int. Ed.</i> 63, e202411165 (2024).
+          <a class="doi" href="https://doi.org/10.1002/anie.202411165" target="_blank">DOI</a>
         </li>
 
         <li>
-          Dileep, N. P.; <strong>Madhusudhanan, M. C.</strong>; Puthenveettil, L. K.;
-          Yadav, V.; Myakala, S. N.; Kunnikuruvan, S.; Shaijumon, M. M.
-          Nanostructured Ternary Bismuth–Antimony Trichalcogenide/Au Heterostructure
-          Boosts Electrocatalytic Hydrogen Evolution Reaction.
-          <span class="journal">ACS Appl. Energy Mater.</span>
-          <span class="year">7, 3688–3699 (2024).</span>
+          Dileep, N. P.; <b>Madhusudhanan, M. C.</b>; <i>et al.</i>
+          Nanostructured Ternary Bismuth–Antimony Trichalcogenide/Au Heterostructure Boosts Electrocatalytic
+          Hydrogen Evolution Reaction.
+          <i>ACS Appl. Energy Mater.</i> 7, 3688–3699 (2024).
+          <a class="doi" href="https://doi.org/10.1021/acsaem.4c00046" target="_blank">DOI</a>
         </li>
 
         <li>
-          <strong>Madhusudhanan, M. C.</strong>; Kumar, S. A.; Nair, S.; Srinivasan, M. N.;
-          Buragohain, M.; Kunnikuruvan, S.
-          Revisiting the Relation Between LUMO Stability of Electrolytes and
-          Solid Electrolyte Interphase Formation Kinetics.
-          <span class="journal">Batter. Supercaps</span>
-          <span class="year">6, e202200430 (2023).</span>
+          <b>Madhusudhanan, M. C.</b>; Kumar, S. A.; Nair, S.; Srinivasan, M. N.; Buragohain, M.; Kunnikuruvan, S.
+          Revisiting the Relation Between the Stability of the LUMO of the Electrolytes and the Kinetics of
+          Solid Electrolyte Interface Formation in Lithium and Post Lithium-ion Batteries.
+          <i>Batter. Supercaps</i> 6, e202200430 (2023).
+          <a class="doi" href="https://doi.org/10.1002/batt.202200430" target="_blank">DOI</a>
         </li>
 
       </ol>
