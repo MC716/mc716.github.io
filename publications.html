@@ -1,29 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Publications | Mithun</title>
-<meta charset="UTF-8">
+  <title>Publications | Mithun C. Madhusudhanan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    :root {
+      --accent: #1f4ed8;
+      --text: #1a1a1a;
+      --muted: #555;
+      --bg: #fafafa;
+      --card: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* NAV BAR */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 14px 40px;
+      border-bottom: 1px solid #e6e6e6;
+      z-index: 100;
+    }
+
+    .navbar a {
+      margin-right: 24px;
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .navbar a:hover {
+      color: var(--accent);
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 900px;
+      margin: 70px auto;
+      padding: 0 24px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    /* PUBLICATION CARD */
+    .pub-card {
+      background: var(--card);
+      padding: 26px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    }
+
+    .pub-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .pub-list li {
+      margin-bottom: 18px;
+    }
+
+    .journal {
+      font-weight: 600;
+    }
+
+    .year {
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 60px 0 30px;
+    }
+  </style>
 </head>
-<body style="font-family:Arial; margin:40px;">
 
-<!-- NAV BAR -->
-<div style="background:#f2f2f2;padding:15px;font-size:18px;">
-  <a href="index.html" style="margin-right:20px;">Mithun</a>
-  <a href="publications.html" style="margin-right:20px;">Publications</a>
-  <a href="scripts.html" style="margin-right:20px;">Scripts</a>
-  <a href="research.html">Research Interests</a>
-</div>
+<body>
 
-<h1>Publications</h1>
+  <!-- NAV BAR -->
+  <div class="navbar">
+    <a href="index.html"><strong>Mithun</strong></a>
+    <a href="publications.html">Publications</a>
+    <a href="scripts.html">Scripts</a>
+    <a href="research.html">Research</a>
+  </div>
 
-<ul>
-  <li><b>Nature</b>, Title (Year)</li>
-  <li><b>Science</b>, Title (Year)</li>
-  <li><b>JACS</b> × 10</li>
-  <li><b>Angewandte</b> × 5</li>
-  <li><b>Nature Chemistry</b> × 6</li>
-  <li>More coming...</li>
-</ul>
+  <div class="container">
+
+    <h1>Publications</h1>
+    <p class="subtitle">
+      Peer-reviewed journal articles (*chronological order*)
+    </p>
+
+    <div class="pub-card">
+      <ol class="pub-list">
+
+        <li>
+          Sun, J.; Tugwell, T. H.; Xu, L.; <strong>Madhusudhanan, M. C.</strong>;
+          Liu, P.; Engle, K. M.
+          Copper(II)-Catalyzed Stereodivergent Addition of Carboxylic Acids to
+          Unactivated Alkynes via Nucleocupration.
+          <span class="journal">J. Am. Chem. Soc.</span>
+          <span class="year">147, 36407–36419 (2025).</span>
+        </li>
+
+        <li>
+          Sharland, J.; Shimambukuro, K.; Alturaifi, T. M.; Mai, B. K.;
+          <strong>Madhusudhanan, M. C.</strong>; Musaev, D. G.; Liu, P.; Davies, H. M. L.
+          HFIP Solvent Effects on Catalyst Flexibility and Enantioselectivity of
+          Dirhodium Tetracarboxylate-Catalyzed Cyclopropanation.
+          <span class="journal">J. Am. Chem. Soc.</span>
+          <span class="year">147, 14694–14704 (2025).</span>
+        </li>
+
+        <li>
+          Casselman, T. D.; <strong>Madhusudhanan, M. C.</strong>; Mai, B. K.; Liu, P.;
+          Stoltz, B. M.
+          Potassium tert-Butoxide-Mediated Stereoselective/Direct Mannich Reaction
+          of α-Substituted-γ-Lactams with in situ Generated Aryl N-Silyl Imines.
+          <span class="journal">Chem. Sci.</span>
+          <span class="year">16, 9863–9871 (2025).</span>
+        </li>
+
+        <li>
+          Meng, J.; <strong>Madhusudhanan, M. C.</strong><sup>†</sup>; Wang, T.<sup>†</sup>;
+          Cheng, Z.; Zhao, B.; Shi, H.; Yang, L.; Liu, P.; Jiao, N.
+          Overcoming Challenges in Transforming Complex Carboxylic Acids by
+          Biomimetic Bimetallic Catalysis.
+          <span class="journal">Nat. Catal.</span>
+          <span class="year">(2025).</span>
+          <br><small><sup>†</sup>Equal contribution.</small>
+        </li>
+
+        <li>
+          Nie, Q.; Zhao, F.; Yu, X.; <strong>Madhusudhanan, M. C.</strong>; Chang, C.; Li, S.;
+          Chowdhury, S. R.; Kille, B.; Xu, A.; Sun, C.; <em>et al.</em>
+          A New Class of Benzofuranoindoline-Bearing Heptacyclic Fungal RiPPs
+          with Anticancer Activities.
+          <span class="journal">Nat. Chem. Biol.</span>
+          <span class="year">21, 1938–1947 (2025).</span>
+        </li>
+
+        <li>
+          Chen, M.; Knox, C. D.; <strong>Madhusudhanan, M. C.</strong>; Tugwell, T. H.;
+          Liu, C.; Liu, P.; Dong, G.
+          Stereospecific Alkenylidene Homologation of Organoboronates by SNV Reaction.
+          <span class="journal">Nature</span>
+          <span class="year">631, 328–334 (2024).</span>
+        </li>
+
+        <li>
+          Xie, Q.; Tugwell, T. H.; Li, J.; <strong>Madhusudhanan, M. C.</strong>;
+          Liu, P.; Dong, G.
+          Enantioconvergent Carbenoid Insertion into Carbon–Boron Bonds.
+          <span class="journal">Nat. Synth.</span>
+          <span class="year">4, 1297–1307 (2025).</span>
+        </li>
+
+        <li>
+          Lal, A.; Rai, R.; <strong>Madhusudhanan, M. C.</strong>; Sureshan, K. M.
+          Topochemical Polymerization of Retro-Isomeric Peptides for Tuning
+          Polymer Structure and Properties.
+          <span class="journal">Angew. Chem. Int. Ed.</span>
+          <span class="year">64, e202503624 (2025).</span>
+        </li>
+
+        <li>
+          Lal, A.; <strong>Madhusudhanan, M. C.</strong>; Sureshan, K. M.
+          Large Molecular Rotation in Crystals Changes the Course of a
+          Topochemical Diels–Alder Reaction.
+          <span class="journal">Angew. Chem. Int. Ed.</span>
+          <span class="year">63, e202411165 (2024).</span>
+        </li>
+
+        <li>
+          Dileep, N. P.; <strong>Madhusudhanan, M. C.</strong>; Puthenveettil, L. K.;
+          Yadav, V.; Myakala, S. N.; Kunnikuruvan, S.; Shaijumon, M. M.
+          Nanostructured Ternary Bismuth–Antimony Trichalcogenide/Au Heterostructure
+          Boosts Electrocatalytic Hydrogen Evolution Reaction.
+          <span class="journal">ACS Appl. Energy Mater.</span>
+          <span class="year">7, 3688–3699 (2024).</span>
+        </li>
+
+        <li>
+          <strong>Madhusudhanan, M. C.</strong>; Kumar, S. A.; Nair, S.; Srinivasan, M. N.;
+          Buragohain, M.; Kunnikuruvan, S.
+          Revisiting the Relation Between LUMO Stability of Electrolytes and
+          Solid Electrolyte Interphase Formation Kinetics.
+          <span class="journal">Batter. Supercaps</span>
+          <span class="year">6, e202200430 (2023).</span>
+        </li>
+
+      </ol>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Mithun C. Madhusudhanan
+  </footer>
 
 </body>
 </html>
