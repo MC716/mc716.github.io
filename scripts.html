@@ -1,32 +1,56 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>Scripts | Mithun</title>
-<meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Computational chemistry scripts and tools by Mithun C. Madhusudhanan.">
+  <title>Scripts & Tools | Mithun C. Madhusudhanan</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body style="font-family:Arial; margin:40px;">
+<body>
 
-<!-- NAV BAR -->
-<div style="background:#f2f2f2;padding:15px;font-size:18px;">
-  <a href="index.html" style="margin-right:20px;">Mithun</a>
-  <a href="publications.html" style="margin-right:20px;">Publications</a>
-  <a href="scripts.html" style="margin-right:20px;">Scripts</a>
-  <a href="research.html">Research Interests</a>
+<div class="navbar">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">MCM</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="scripts.html">Scripts</a>
+    </nav>
+  </div>
 </div>
 
-<h1>Scripts & Tools</h1>
+<main class="container">
+  <header class="page-header">
+    <div class="eyebrow">Code</div>
+    <h1>Scripts & tools</h1>
+    <p>Small utilities and reproducible workflows I use for trajectory analysis, simulation setup, high-performance computing, and mechanistic data analysis.</p>
+  </header>
 
-<p>Here are some of the Python/Bash tools I develop for computational chemistry:</p>
-
-<ul>
-  <li><a href="#">Dihedral extraction automation</a></li>
-  <li><a href="#">MD analysis / PCA / t-SNE pipelines</a></li>
-  <li><a href="#">QM/MM metadynamics templates</a></li>
-  <li><a href="#">Automated SLURM submission pipeline</a></li>
-  <li><a href="#">Carbene philicity scoring model</a></li>
-</ul>
-
-<p>I can link each item to GitHub repositories later.</p>
-
+  <div class="script-list">
+    <article class="script-item">
+      <div><h3>Trajectory geometry analysis</h3><p>Automated extraction of distances, angles, dihedrals, hydrogen-bond metrics, and frame-wise contact assignments.</p></div>
+      <span class="status">GitHub soon</span>
+    </article>
+    <article class="script-item">
+      <div><h3>MD clustering & dimensionality reduction</h3><p>PCA, t-SNE, clustering, KDE analysis, and conformational-state workflows for large MD datasets.</p></div>
+      <span class="status">GitHub soon</span>
+    </article>
+    <article class="script-item">
+      <div><h3>QM/MM & metadynamics templates</h3><p>Reusable CP2K templates and analysis helpers for QM/MM dynamics, collective variables, and free-energy surfaces.</p></div>
+      <span class="status">GitHub soon</span>
+    </article>
+    <article class="script-item">
+      <div><h3>SLURM workflow automation</h3><p>Batch preparation, submission, restart, queue inspection, and job-management helpers for HPC simulations.</p></div>
+      <span class="status">GitHub soon</span>
+    </article>
+    <article class="script-item">
+      <div><h3>Mechanistic descriptor workflows</h3><p>Python utilities for descriptor generation, regression, visualization, and catalyst/selectivity analysis.</p></div>
+      <span class="status">GitHub soon</span>
+    </article>
+  </div>
+</main>
+<footer>© 2026 Mithun C. Madhusudhanan</footer>
 </body>
 </html>
