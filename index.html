@@ -1,211 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <title>Mithun C. Madhusudhanan | Computational Chemistry</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-    :root {
-      --accent: #1f4ed8;
-      --text: #1a1a1a;
-      --muted: #555;
-      --bg: #fafafa;
-      --card: #ffffff;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* NAV BAR */
-    .navbar {
-      position: sticky;
-      top: 0;
-      background: white;
-      padding: 14px 40px;
-      border-bottom: 1px solid #e6e6e6;
-      z-index: 100;
-    }
-
-    .navbar a {
-      margin-right: 24px;
-      text-decoration: none;
-      font-weight: 500;
-      color: var(--text);
-    }
-
-    .navbar a:hover {
-      color: var(--accent);
-    }
-
-    /* MAIN CONTAINER */
-    .container {
-      max-width: 900px;
-      margin: 70px auto;
-      padding: 0 24px;
-      position: relative;
-    }
-
-    /* HERO */
-    .hero {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      margin-bottom: 60px;
-      flex-wrap: wrap;
-      position: relative;
-    }
-
-    /* LIGHT MOLECULE BACKGROUND */
-    .hero::after {
-      content: "";
-      position: absolute;
-      top: -100px;
-      right: -160px;
-      width: 520px;
-      height: 520px;
-      background: url("assets/rh2_molecule.svg") no-repeat center;
-      background-size: contain;
-      opacity: 0.045;
-      z-index: -1;
-      transform: rotate(-15deg);
-      pointer-events: none;
-    }
-
-    /* PROFILE PHOTO */
-    .profile-pic {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-      flex-shrink: 0;
-    }
-
-    .hero-text {
-      max-width: 650px;
-    }
-
-    .hero h1 {
-      font-size: 2.4rem;
-      margin-bottom: 6px;
-    }
-
-    .hero h3 {
-      font-weight: 400;
-      color: var(--muted);
-      margin-top: 0;
-    }
-
-    .hero p {
-      font-size: 1.05rem;
-      margin-top: 18px;
-    }
-
-    /* SECTIONS */
-    section {
-      background: var(--card);
-      padding: 28px 32px;
-      border-radius: 12px;
-      margin-bottom: 34px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-    }
-
-    section h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-      border-bottom: 2px solid var(--accent);
-      display: inline-block;
-      padding-bottom: 4px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin: 60px 0 30px;
-    }
-
-    /* MOBILE */
-    @media (max-width: 640px) {
-      .hero {
-        justify-content: center;
-        text-align: center;
-      }
-
-      .hero::after {
-        display: none;
-      }
-    }
-  </style>
+  <meta name="description" content="Mithun C. Madhusudhanan — computational chemist working on molecular dynamics, QM/MM, catalysis, and mechanistic modeling.">
+  <title>Mithun C. Madhusudhanan | Computational Chemistry</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <!-- NAV BAR -->
-  <div class="navbar">
-    <a href="index.html"><strong>Mithun</strong></a>
-    <a href="publications.html">Publications</a>
-    <a href="scripts.html">Scripts</a>
-    <a href="research.html">Research</a>
+<div class="navbar">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">MCM</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="scripts.html">Scripts</a>
+    </nav>
   </div>
+</div>
 
-  <div class="container">
-
-    <!-- HERO -->
-    <div class="hero">
-
-      <!-- PROFILE PHOTO -->
-      <img src="assets/Profile_pic.jpg"
-          alt="Mithun C. Madhusudhanan"
-          class="profile-pic">
-
-      <div class="hero-text">
-        <h1>Mithun C. Madhusudhanan</h1>
-        <h3>Computational Chemist | Molecular Dynamics | QM/MM | Catalysis</h3>
-
-        <p>
-          I am a computational and theoretical chemist working at the interface of
-          molecular dynamics, quantum chemistry, and catalyst design. My research
-          focuses on dynamics-informed mechanistic analysis, carbene reactivity,
-          and predictive models for enantioselective catalysis.
-        </p>
+<main class="container">
+  <section class="hero">
+    <div class="profile-wrap">
+      <img class="profile-pic" src="assets/Profile_pic.jpg" alt="Mithun C. Madhusudhanan">
+    </div>
+    <div>
+      <div class="eyebrow">Computational & Theoretical Chemistry</div>
+      <h1>Mithun C.<br>Madhusudhanan</h1>
+      <p class="tagline">Molecular dynamics · QM/MM · catalysis · mechanistic modeling</p>
+      <p class="summary">
+        I am a Ph.D. candidate in chemistry at the University of Pittsburgh working with Prof. Peng Liu.
+        My research uses molecular dynamics, quantum chemistry, enhanced sampling, and data-driven analysis
+        to understand how catalyst structure, flexibility, solvent, and noncovalent interactions control reactivity and selectivity.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="research.html">Explore research</a>
+        <a class="button" href="publications.html">View publications</a>
       </div>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Research focus</div>
+        <h2>Dynamics as a mechanistic tool</h2>
+      </div>
+      <p class="section-note">From atomistic motion to experimentally testable selectivity models.</p>
     </div>
 
-    <!-- ABOUT -->
-    <section>
-      <h2>About Me</h2>
-      <ul>
-        <li><strong>Ph.D. Candidate</strong>, University of Pittsburgh (Prof. Peng Liu)</li>
-        <li>Expertise: Classical MD, QM/MM MD, metadynamics, DFT</li>
-        <li>Research: Rh(II) catalysis, carbene philicity, chiral induction models, silica surfaces</li>
-        <li>Tools: CP2K, Gaussian, ORCA, AMBER, Python-based data workflows</li>
-      </ul>
-    </section>
+    <div class="grid">
+      <article class="card">
+        <h3>Asymmetric catalysis</h3>
+        <p>Understanding chiral dirhodium catalysts, conformational flexibility, induced fit, and the noncovalent interactions that govern enantioinduction.</p>
+        <div class="pill-row"><span class="pill">Rh(II)</span><span class="pill">C–H insertion</span><span class="pill">enantioselectivity</span></div>
+      </article>
+      <article class="card">
+        <h3>Molecular dynamics</h3>
+        <p>Classical MD, QM/MM dynamics, metadynamics, and large-scale trajectory analysis for flexible catalytic systems and condensed-phase chemistry.</p>
+        <div class="pill-row"><span class="pill">AMBER</span><span class="pill">CP2K</span><span class="pill">enhanced sampling</span></div>
+      </article>
+      <article class="card">
+        <h3>Mechanistic computation</h3>
+        <p>DFT, electronic-structure analysis, free-energy workflows, and mechanistically informed data analysis for complex reaction networks.</p>
+        <div class="pill-row"><span class="pill">Gaussian</span><span class="pill">ORCA</span><span class="pill">Python</span></div>
+      </article>
+    </div>
+  </section>
+</main>
 
-  </div>
-
-  <footer>
-    © 2025 Mithun C. Madhusudhanan
-  </footer>
-
+<footer>© 2026 Mithun C. Madhusudhanan · Computational Chemistry</footer>
 </body>
 </html>
