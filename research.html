@@ -1,29 +1,75 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>Research Interests | Mithun</title>
-<meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research interests of computational chemist Mithun C. Madhusudhanan.">
+  <title>Research | Mithun C. Madhusudhanan</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body style="font-family:Arial; margin:40px;">
+<body>
 
-<!-- NAV BAR -->
-<div style="background:#f2f2f2;padding:15px;font-size:18px;">
-  <a href="index.html" style="margin-right:20px;">Mithun</a>
-  <a href="publications.html" style="margin-right:20px;">Publications</a>
-  <a href="scripts.html" style="margin-right:20px;">Scripts</a>
-  <a href="research.html">Research Interests</a>
+<div class="navbar">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">MCM</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="scripts.html">Scripts</a>
+    </nav>
+  </div>
 </div>
 
-<h1>Research Interests</h1>
+<main class="container">
+  <header class="page-header">
+    <div class="eyebrow">Research</div>
+    <h1>How molecular motion shapes chemical selectivity.</h1>
+    <p>I work across molecular dynamics, electronic structure theory, and mechanistic modeling, with an emphasis on catalytic systems whose behavior cannot be captured by a single static structure.</p>
+  </header>
 
-<ul>
-  <li>Dynamics-informed catalyst design (Rh₂ carboxylates, prolinates, TPCP/TPTTL systems)</li>
-  <li>Carbene electrophilicity/nucleophilicity and C–H insertion control</li>
-  <li>Large-scale MD of flexible catalysts (1000 ns × 3 replicates)</li>
-  <li>QM/MM enhanced sampling (metadynamics, constrained MD)</li>
-  <li>Silica surface modeling, CO₂ capture, aminosilane dynamics</li>
-  <li>Machine learning for mechanistic pattern recognition</li>
-</ul>
+  <div class="research-grid">
+    <article class="research-card">
+      <h2>Dynamics-informed asymmetric catalysis</h2>
+      <p>Using classical and QM/MM molecular dynamics to understand flexibility, induced fit, solvent response, and stereocontrol in chiral dirhodium catalysts.</p>
+      <ul>
+        <li>Dirhodium tetracarboxylates and tetraprolinates</li>
+        <li>Carbene C–H insertion and cyclopropanation</li>
+        <li>Noncovalent interactions and facial selectivity</li>
+      </ul>
+    </article>
 
+    <article class="research-card">
+      <h2>Predictive models of enantioinduction</h2>
+      <p>Connecting conformational ensembles and energetics to quantitative predictions of reaction selectivity.</p>
+      <ul>
+        <li>MM/GBSA and ensemble-based energetic descriptors</li>
+        <li>Mechanism-informed selectivity models</li>
+        <li>Machine learning for pattern recognition and catalyst classification</li>
+      </ul>
+    </article>
+
+    <article class="research-card">
+      <h2>QM/MM and enhanced sampling</h2>
+      <p>Exploring reaction-relevant conformational space in explicit solvent using multiscale dynamics and biasing methods.</p>
+      <ul>
+        <li>QM/MM molecular dynamics</li>
+        <li>Metadynamics and constrained simulations</li>
+        <li>Free-energy landscapes and collective variables</li>
+      </ul>
+    </article>
+
+    <article class="research-card">
+      <h2>Broader mechanistic chemistry</h2>
+      <p>Applying computational chemistry to transition-metal catalysis, carbene philicity, solid-state reactivity, interfacial chemistry, and CO₂ capture.</p>
+      <ul>
+        <li>DFT and electronic-structure analysis</li>
+        <li>Topochemical and solid-state reaction dynamics</li>
+        <li>Silica surfaces and aminosilane behavior</li>
+      </ul>
+    </article>
+  </div>
+</main>
+<footer>© 2026 Mithun C. Madhusudhanan</footer>
 </body>
 </html>
