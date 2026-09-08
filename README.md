@@ -45,14 +45,14 @@ Broader research interests include:
 
 - Google Scholar: https://scholar.google.com/citations?user=Y6YVZqoAAAAJ&hl=en
 - LinkedIn: https://www.linkedin.com/in/mithun-madhusudhanan-b98944132/
+- ResearchGate: https://www.researchgate.net/profile/Mithun-Madhusudhanan
 
 ## Website Structure
 
 - `index.html` — profile and research overview
 - `research.html` — detailed research interests
 - `publications.html` — publication list
-- `scripts.html` — computational chemistry tools and workflows
-- `styles.css` — shared visual design
+- `style4_dark_portfolio.css` — shared visual design
 
 ## Assets
 
@@ -64,5 +64,8 @@ Keep your existing profile photograph at:
 
 The website is fully static and can be hosted directly with GitHub Pages.
 
-Place the HTML files, `styles.css`, and the `assets` directory in the repository root,
+Place the HTML files, `style4_dark_portfolio.css`, and the `assets` directory in the repository root,
 then enable GitHub Pages for the repository.
+
+
+Note: The Scripts section is intentionally omitted for now and can be added later when the repositories are ready.
